@@ -1,4 +1,5 @@
-function archivo(evt) {
+function archivo(evt) 
+{
     var files = evt.target.files; // FileList object
      
       //Obtenemos la imagen del campo "file". 
@@ -13,12 +14,11 @@ function archivo(evt) {
          reader.onload = (function(theFile) {
              return function(e) {
              // Creamos la imagen.
-                    document.getElementById("list").innerHTML = ['<img class="thumb" width="20%" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+                    document.getElementById("list").innerHTML = ['<img class="imagen-pre" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
              };
          })(f);
 
          reader.readAsDataURL(f);
      }
 }
-           
-    document.getElementById('files').addEventListener('change', archivo, false);
+document.getElementById('files').addEventListener('change', archivo, false);
