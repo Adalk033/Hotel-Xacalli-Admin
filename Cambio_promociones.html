@@ -11,6 +11,9 @@
     <a name="Promociones"></a>
     <section class="Promociones">
         <h2>Promociones</h2>
+        <br>
+        <p align="center">Aqui lo que se hace sera cambiar la informacion de cada promocion existente asi como su imagen correspondiente segun seleccione</p>
+        <br>
         <div class="Cambio-habitaciones">
             <select name="habitaciones">
 
@@ -21,15 +24,26 @@
                 <option>Promocion 3</option>
                 
             </select>
+            <p>Cambio de nombre de la Promocion:</p>
+            <textarea></textarea>
             <br>
+            <p>Cambio del descuento de la Promocion:</p>
             <textarea>
             </textarea>
             <br>
-            <button>Seleccionar imagen</button>
+            <p>Cambio de texto para la descripcion de la Promocion:</p>
+            <textarea>
+            </textarea>
+            <br>
+            <p>Cambio de imagen: </p>
+            <input type="file" id="files" name="files[]" />
+            <br>
+            <p>Previsuzalicion de la imagen: </p>
+            <output id="list"></output>
             <br>
             <button>Guardar</button>
         </div>
     </section>
-
+    <script src="Scritps/Promociones.js"></script>
 </body>
 </html>

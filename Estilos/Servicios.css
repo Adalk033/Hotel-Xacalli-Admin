@@ -24,11 +24,10 @@ h2
 }
 .Boton-Servivicos-Cambio
 {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   align-items: center;
 }
-.Cambio-habitaciones
+.Cambio-servicios
 {
   font-size: 20px;
   display: flex;

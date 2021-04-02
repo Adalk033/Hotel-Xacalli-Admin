@@ -13,23 +13,38 @@
     <a name="Precios"></a>
     <section class="Precios">
         <h2>Precios</h2>
+        <br>
+        <p align="center">Aqui lo que se hara seran los cambios de la informacion de las habitaciones y de la imagen de las habitaciones segun seleccione</p>
+        <br>
         <div class="Cambio-habitaciones">
             <select name="habitaciones">
 
-                <option>Habitacion numero 1(Standar)</option>
+                <option>Habitacion numero 1</option>
                 
-                <option>Habitacion numero 2(Suite)</option>
+                <option>Habitacion numero 2</option>
                 
             </select>
+            <p>Cambio de nombre de la habitacion:</p>
+            <textarea></textarea>
             <br>
+            <p>Cambio de precio de la habitacion:</p>
             <textarea>
             </textarea>
             <br>
-            <button>Seleccionar imagen</button>
+            <p>Cambio de texto para la descripcion de la habitacion:</p>
+            <textarea>
+            </textarea>
+            <br>
+            <p>Cambio de imagen: </p>
+            <input type="file" id="files" name="files[]" />
+            <br>
+            <p>Previsuzalicion de la imagen: </p>
+            <output id="list"></output>
             <br>
             <button>Guardar</button>
             
         </div>
     </section>
+    <script src="Scritps/Precios.js"></script>
 </body>
 </html>
